@@ -1,2 +1,2 @@
 # XSS_platform
-A XSS vulnerability sploit tool.
+A Cross Site Scripting (XSS) vulnerability exploit tool.
