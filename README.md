@@ -1,8 +1,6 @@
-# XSS_platform
+# XSS_platform (Not finished)
 
 [![Python 2.7](https://img.shields.io/badge/python-2.7-yellow.svg)](https://www.python.org/)
-
-**Attention: This project hasn't finished yet**
 
 A Cross-site Scripting (XSS) vulnerability exploit tool.
 
