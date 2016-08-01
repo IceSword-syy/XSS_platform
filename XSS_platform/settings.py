@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'receive',
     'show',
+    'home',
 ]
 
 MIDDLEWARE_CLASSES = [
