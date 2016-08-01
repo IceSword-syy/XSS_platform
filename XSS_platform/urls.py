@@ -19,6 +19,6 @@ from django.contrib import admin
 from cookie import views as cookie_views
 
 urlpatterns = [
-    url(r'^$', cookie_views.index),
+    url(r'^$', cookie_views.home, name='home'),
     url(r'^admin/', admin.site.urls),
 ]
