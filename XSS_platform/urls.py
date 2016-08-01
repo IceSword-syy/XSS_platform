@@ -17,9 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from receive import views as receive_views
-
+from show import views as show_views
 
 urlpatterns = [
+    url(r'^show', show_views.show_cookie, name='show'),
     url(r'^cookie', receive_views.receive_cookie, name='receive'),
     url(r'^admin/', admin.site.urls),
 ]
