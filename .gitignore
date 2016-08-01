@@ -1,0 +1,10 @@
+# Binary file
+*.pyc
+*/*.pyc
+*/*/*.pyc
+
+# Bash file
+*.sh
+
+# Mac file
+.DS_Store
