@@ -7,5 +7,5 @@ class ClassName(models.Model):
     '''
     Cookie container
     '''
-    cookie = models.CharField()
-    domain = models.CharField()
+    cookie = models.CharField(max_length=255)
+    # domain = models.CharField(max_length=15)

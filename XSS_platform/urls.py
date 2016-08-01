@@ -16,9 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from receive import views as receive_views
+from cookie import views as cookie_views
 
 urlpatterns = [
-    url(r'^$', receive_views.index),
+    url(r'^$', cookie_views.index),
     url(r'^admin/', admin.site.urls),
 ]
