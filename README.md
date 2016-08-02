@@ -7,7 +7,7 @@ A Cross-site Scripting (XSS) vulnerability exploit tool.
 # Requirements
 
 * [Python 2.7.x](http://www.python.org/download/)
-* [Django](https://pypi.python.org/pypi/django/)
+* [Django 1.9.x](https://pypi.python.org/pypi/django/)
 
 # Installation
 
