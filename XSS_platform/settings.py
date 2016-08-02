@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'receive',
-    'show',
     'home',
 ]
 
@@ -52,6 +51,7 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'XSS_platform.urls'
@@ -118,8 +118,33 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Chinese Feature (Unfinished)
+
+# LANGUAGES = (
+#     ('en', ('English')),
+#     ('zh-cn', ('Chinese')),
+# )
+#
+# LOCALE_PATHS = (
+#     os.path.join(BASE_DIR, 'locale'),
+# )
+#
+# TEMPLATE_CONTEXT_PROCESSORS = (
+#     "django.core.context_processors.i18n",
+# )
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Email Backend
+
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+#
+# EMAIL_USE_TLS = False
+# EMAIL_HOST = ''
+# EMAIL_PORT = 25
+# EMAIL_HOST_USER = ''
+# EMAIL_HOST_PASSWORD = ''
+# DEFAULT_FROM_EMAIL = ''

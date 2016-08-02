@@ -2,7 +2,6 @@ from django.shortcuts import render
 
 from django.http import HttpResponse
 from receive.models import Cookie
-
 # Create your views here.
 
 def receive_cookie(request):
