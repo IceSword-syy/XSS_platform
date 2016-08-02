@@ -23,4 +23,4 @@ def receive_cookie(request):
     # Store it if there isn't existed
     Cookie.objects.get_or_create(cookie=cookie, domain=domain, ip=ip)
 
-    return HttpResponse('OK')
+    return HttpResponse(cookie)
