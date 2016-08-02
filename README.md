@@ -2,7 +2,7 @@
 
 [![Python 2.7](https://img.shields.io/badge/python-2.7-yellow.svg)](https://www.python.org/)
 
-A Cross-site Scripting (XSS) vulnerability exploit tool.
+A Cross-site Scripting (XSS) vulnerability exploit tool based on Django Frame.
 
 # Requirements
 
