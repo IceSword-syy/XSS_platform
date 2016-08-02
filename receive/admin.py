@@ -6,6 +6,6 @@ from .models import Cookie
 # Register your models here.
 
 class CookieAdmin(admin.ModelAdmin):
-    list_display = ('date', 'domain', 'ip', 'update')
+    list_display = ('date', 'domain', 'ip')
 
 admin.site.register(Cookie,CookieAdmin)
