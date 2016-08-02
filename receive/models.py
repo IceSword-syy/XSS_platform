@@ -1,15 +1,14 @@
-from __future__ import unicode_literals
-
 from django.db import models
 
 # Create your models here.
+
 class Cookie(models.Model):
-    '''
-    Cookie container
-    '''
-    cookie = models.CharField(max_length=255)
-    ip = models.CharField(max_length=255)
-    domain = models.CharField(max_length=255)
+
+    cookie = models.TextField('Cookie')
+    ip = models.CharField('IP',max_length=256)
+    domain = models.CharField('From',max_length=256)
+    date = models.DateTimeField('Time', auto_now_add=True, editable = True)
+    update = models.DateTimeField('Update Time',auto_now=True, null=True)
 
     def __unicode__(self):
         return self.cookie
