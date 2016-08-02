@@ -8,3 +8,6 @@
 
 # Mac file
 .DS_Store
+
+# Database
+db.sqlite3
