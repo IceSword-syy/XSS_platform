@@ -11,3 +11,6 @@
 
 # Database
 db.sqlite3
+
+# Migrations file
+*/migrations/
