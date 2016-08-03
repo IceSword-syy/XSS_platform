@@ -20,7 +20,6 @@ from receive import views as receive_views
 from home import views as home_views
 
 urlpatterns = [
-    url(r'^$', home_views.index, name='home'),
-    url(r'^cookie', receive_views.receive_cookie, name='receive'),
+    url(r'^$', receive_views.receive_cookie, name='receive'),
     url(r'^admin/', admin.site.urls),
 ]
