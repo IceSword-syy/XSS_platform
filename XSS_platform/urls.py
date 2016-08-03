@@ -17,7 +17,6 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from receive import views as receive_views
-from home import views as home_views
 
 urlpatterns = [
     url(r'^$', receive_views.receive_cookie, name='receive'),
