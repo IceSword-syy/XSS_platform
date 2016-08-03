@@ -9,6 +9,11 @@ A Cross-site Scripting (XSS) vulnerability exploit tool based on Django Frame.
 * [Python 2.7.x](http://www.python.org/download/)
 * [Django 1.9.x](https://pypi.python.org/pypi/django/)
 
+# Features
+
+* XSS attacking cookies receiver without SQL database
+* Cookies viewer with admin permission
+
 # Installation
 
 XSS_platform works out of the box with [Python](http://www.python.org/download/) version **2.7.x** on any platform.
