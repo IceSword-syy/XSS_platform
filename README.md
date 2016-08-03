@@ -32,4 +32,10 @@ Then you should create an admin account by following these steps.
     $ cd XSS_platform
     $ python manage.py createsuperuser
 
-Following the admin account creation guild, you can easily register an admin account. Thus XSS_platform has completely installed, enjoy it!
+Following the admin account creation guild, you can easily register an admin account. Thus XSS_platform has completely installed.
+
+To active the server, type
+
+    $ python manage.py runserver
+
+Enjoy it!
