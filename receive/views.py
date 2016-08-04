@@ -11,15 +11,16 @@ def receive_cookie(request):
 
     # Get cookie and domain
     cookie = request.GET.get('cookie', 'None')
-    domain = request.META.get('HTTP_REFERER', 'None')
 
-    # Get real ip address
-    if request.META.has_key('HTTP_X_FORWARDED_FOR'):
-        ip =  request.META['HTTP_X_FORWARDED_FOR']
-    else:
-        ip = request.META['REMOTE_ADDR']
-
-    # Store it if there isn't existed
-    Cookie.objects.get_or_create(cookie=cookie, domain=domain, ip=ip)
+    # If there is a cookie, then stroe it
+    if cookie != 'None':
+        domain = request.META.get('HTTP_REFERER', 'None')
+        # Get ip address
+        if request.META.has_key('HTTP_X_FORWARDED_FOR'):
+            ip =  request.META['HTTP_X_FORWARDED_FOR']
+        else:
+            ip = request.META['REMOTE_ADDR']
+            # Store it if there isn't existed
+        Cookie.objects.get_or_create(cookie=cookie, domain=domain, ip=ip)
 
     return HttpResponse(cookie)
